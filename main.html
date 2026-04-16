@@ -7,75 +7,34 @@
 </head>
 
 <body>
-	<form>
-		<table border="1" cellspacing="0" cellpadding="10">
-    <tr>
-        <th>Field</th>
-        <th>Type</th>
-        <th>Required</th>
-        <th>ID</th>
-        <th>Placeholder</th>
-    </tr>
-    <tr>
-        <td>Name</td>
-        <td>Text</td>
-        <td>Yes</td>
-        <td>name</td>
-        <td>Name</td>
-    </tr>
-    <tr>
-        <td>Email</td>
-        <td>Email</td>
-        <td>Yes</td>
-        <td>email</td>
-        <td>Email</td>
-    </tr>
-    <tr>
-        <td>Gender</td>
-        <td>Radio</td>
-        <td>Yes</td>
-        <td>gender_m, gender_f</td>
-        <td>-</td>
-    </tr>
-    <tr>
+	<form method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name" name="name" required>
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Email" required>
+        <label for="">Gender</label>
+        <input type="Radio" id="gender_m"  required name="gender">
+        <label for="gender">Male</label>
+        <input type="Radio" id="gender_f"  required name="gender">
+        <label for="gender">Female</label>
+        <label for="cars">Car Brands</label>
+        <input type="Select" id="cars" placeholder="--Please choose an option--" required name="cars">
+        <label for="age">Age</label>
+        <input type="text" id="age" placeholder="Age" required name="age" name="age">
+        <label for="dob">DOB</label>
+        <input type="Number" id="dob" placeholder="-" required name="dob">
+        <label for="tel">Phone Number</label>
+        <input type="text" id="tel" placeholder="xxx-xxx-xxxx"  name="tel">
+        <label for=""></label>
+        <input type="text" id="" placeholder="" required>
+        <label for="password">Password</label>
+        <input type="text" id="password" placeholder="" required mame="password">
+        <label for="tos">I agree to the TOS</label>
+        <input type="Checkbox" id="tos" required placeholder="-" name="tos">
 
-    </tr>
-    <tr><td>Car Brands</td>
-    <td>Select</td>
-    <td>Yes</td>
-    <td>cars/td>
-    <td>--Please choose an option--</td></tr>
-    <tr><td>Age</td>
-    <td>Number</td>
-    <td>Yes</td>
-    <td>age</td>
-    <td>Age</td></tr>
-    <tr><td>DOB</td>
-    <td>Date</td>
-    <td>Yes</td>
-    <td>dob</td>
-    <td>-</td></tr>
-    <tr>
-        <td>Phone Number</td><td>Tel</td>
-    <td>No</td>
-    <td>tel</td>
-    <td>xxx-xxx-xxxx</td>
-    </tr>
-    <tr><td>Password</td>
-    <td>Password</td>
-    <td>yes</td>
-    <td>password</td>
-    <td>Password</td></tr>
-
-    <tr>
-        <td>I agree to the TOS</td>
-        <td>Checkbox</td>
-        <td>Yes</td>
-        <td>tos</td>
-        <td>-</td>
-    </tr>
-</table>
-	</form>
+        <button type="submit">submit</button>
+    </form>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
